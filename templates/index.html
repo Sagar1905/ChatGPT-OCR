@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>OCR Document Extraction</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2em; }
+        .preview { white-space: pre-wrap; border: 1px solid #ccc; padding: 1em; margin-top: 1em; }
+    </style>
+</head>
+<body>
+    <h1>Upload Document Images</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="documents" multiple accept="image/*" />
+        <button type="submit">Upload and Extract</button>
+    </form>
+
+    {% if preview %}
+    <h2>Preview (first document)</h2>
+    <div class="preview">{{ preview }}</div>
+    {% endif %}
+
+    {% if docs %}
+    <h2>Downloads</h2>
+    <ul>
+        {% for doc in docs %}
+        <li><a href="{{ url_for('download', filename=doc) }}">{{ doc }}</a></li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</body>
+</html>
