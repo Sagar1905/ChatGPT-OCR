@@ -1,0 +1,53 @@
+====================================================
+    ChatGPT OCR - Quick Start Guide for Windows
+====================================================
+
+🚀 SUPER EASY SETUP - Just 3 Steps!
+
+1. Get an OpenAI API Key
+   - Go to: https://platform.openai.com/api-keys
+   - Create account and generate an API key
+   - Copy the key (starts with "sk-...")
+
+2. Run the Setup Script
+   - Double-click: setup_and_run_windows.bat
+   - Paste your API key when prompted
+   - Wait for installation to complete
+
+3. Use the Application
+   - Browser will open automatically at http://localhost:5000
+   - Drag & drop your images to extract text
+   - Download the Word documents with extracted text
+
+====================================================
+
+🔧 What the Script Does Automatically:
+- Checks if Python is installed (tells you how to install if missing)
+- Installs all required dependencies
+- Sets up your OpenAI API key
+- Creates necessary folders
+- Starts the application
+- Opens your web browser
+
+====================================================
+
+💡 Tips for Best Results:
+- Use clear, high-resolution images
+- Make sure documents are flat and well-lit
+- Try "High Accuracy Mode" for important documents
+- The app works with: tables, forms, receipts, documents
+
+====================================================
+
+❗ Need Help?
+- If setup fails, try running as Administrator
+- Make sure you have internet connection
+- Check that your API key is correct
+- See README.md for detailed troubleshooting
+
+====================================================
+
+For PowerShell Users:
+Right-click setup_and_run_windows.ps1 → "Run with PowerShell"
+
+==================================================== 
