@@ -2,3 +2,7 @@ Flask
 python-docx
 openai
 Pillow
+python-dotenv
+markdown2
+opencv-python
+numpy
